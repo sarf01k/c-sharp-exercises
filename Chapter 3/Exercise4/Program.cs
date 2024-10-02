@@ -3,9 +3,9 @@
     class Program{
         static void Main(string[] args)
         {
-            int num = 10;
+            int num = 2;
 
-            bool bit3 = ((num >> 1) & 1) == 1;
+            bool bit3 = (num & 4) != 0;
 
             if (bit3)
                 Console.WriteLine("Third bit is 1");
