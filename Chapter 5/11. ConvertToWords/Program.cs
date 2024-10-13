@@ -29,7 +29,36 @@
             }
         }
 
-        private static string DDigit(int number)
+        private static string TeenDigit(int number)
+        {
+            switch (number % 10)
+            {
+                case 0:
+                    return "eleven";
+                case 1:
+                    return "eleven";
+                case 2:
+                    return "twelve";
+                case 3:
+                    return "thirteen";
+                case 4:
+                    return "fourteen";
+                case 5:
+                    return "fifteen";
+                case 6:
+                    return "sixteen";
+                case 7:
+                    return "seventeen";
+                case 8:
+                    return "eighteen";
+                case 9:
+                    return "nineteen";
+                default:
+                    return "Number must be between [0...999]";
+            }
+        }
+
+        private static string DoubleDigit(int number)
         {
             switch (number)
             {
@@ -70,25 +99,28 @@
                     words = Digit(number / 100);
                     words += " hundred";
 
-                    if ((number % 100) / 10 >= 1 && (number % 100) / 10 <= 9)
+                    if ((number % 100) / 10 >= 2 && (number % 100) / 10 <= 9)
                     {
-                        words += " and " + DDigit((number % 100) / 10);
+                        words += " and " + DoubleDigit((number % 100) / 10);
 
                         if ((number % 10) >= 1 && (number % 10) <= 9)
                         {
-                            words += " " + Digit((number % 10));
+                            words += " " + Digit(number % 10);
                         }
                     }
-
-                    if ((number % 100) / 10 == 0)
+                    else if (number % 100 / 10 == 0)
                     {
-                        words += " and " + Digit((number % 10));
+                        words += " and " + Digit(number % 10);
+                    }
+                    else
+                    {
+                        words += " and " + TeenDigit((number % 100) % 10);
                     }
                 }
 
-                if (number >= 20)
+                if (number >= 20 && number <= 99)
                 {
-                    words += DDigit(number / 10);
+                    words += DoubleDigit(number / 10);
 
                     if (number % 10 > 0)
                     {
@@ -100,39 +132,7 @@
                 {
                     if (number / 10 > 0)
                     {
-                        switch (number % 10)
-                        {
-                            case 0:
-                                words += "eleven";
-                                break;
-                            case 1:
-                                words += "eleven";
-                                break;
-                            case 2:
-                                words += "twelve";
-                                break;
-                            case 3:
-                                words += "thirteen";
-                                break;
-                            case 4:
-                                words += "fourteen";
-                                break;
-                            case 5:
-                                words += "fifteen";
-                                break;
-                            case 6:
-                                words += "sixteen";
-                                break;
-                            case 7:
-                                words += "seventeen";
-                                break;
-                            case 8:
-                                words += "eighteen";
-                                break;
-                            case 9:
-                                words += "nineteen";
-                                break;
-                        }
+                        words = TeenDigit(number);
                     }
                     else
                     {
