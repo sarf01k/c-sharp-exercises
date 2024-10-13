@@ -129,6 +129,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. BonusPoints", "Chapter 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. ConvertToWords", "Chapter 5\11. ConvertToWords\11. ConvertToWords.csproj", "{E725CBA2-EE55-4A45-BFAD-E119EA0C691C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 6", "Chapter 6", "{9619355E-3F8F-479A-B5AC-07FBFEC67E97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
