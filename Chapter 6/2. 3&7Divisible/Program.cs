@@ -1,4 +1,4 @@
-﻿namespace Print1ToN
+﻿namespace DivisibleBy3and7
 {
     class Program
     {
@@ -7,9 +7,14 @@
             Console.Write("Enter a number: ");
             int number = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("\nNumbers divisible by 3 & 7:");
+
             for (int i = 1; i <= number; i++)
             {
-                Console.Write("{0} ", i);
+                if (i % 3 == 0 && i % 7 == 0)
+                {
+                    Console.Write("{0} ", i);
+                }
             }
         }
     }
