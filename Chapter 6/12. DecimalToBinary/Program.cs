@@ -5,23 +5,23 @@
         static void Main(string[] args)
         {
             Console.Write("Enter a decimal number: ");
-            byte inDecimal = byte.Parse(Console.ReadLine());
+            long inDecimal = long.Parse(Console.ReadLine());
 
             string inBinary = "";
 
-            byte quotient = byte.MinValue;
-            byte remainder = byte.MinValue;
+            long quotient = long.MinValue;
+            long remainder = long.MinValue;
             do
             {
-                quotient = (byte)(inDecimal / 2);
-                remainder = (byte)(inDecimal % 2);
+                quotient = (long)(inDecimal / 2);
+                remainder = (long)(inDecimal % 2);
                 inDecimal = quotient;
                 inBinary += remainder;
             } while (quotient != 0);
 
-            char[] reverse = inBinary.ToCharArray();
-            Array.Reverse(reverse);
-            Console.WriteLine("To binary: {0}", String.Concat(reverse).PadLeft(8, '0').Insert(4, " "));
+            char[] inReverse = inBinary.ToCharArray();
+            Array.Reverse(inReverse);
+            Console.WriteLine("To binary: {0}", String.Concat(inReverse));
         }
     }
 }

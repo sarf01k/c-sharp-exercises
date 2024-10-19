@@ -1,23 +1,23 @@
-﻿namespace BinaryToDecimal
+﻿using System.Numerics;
+
+namespace BinaryToDecimal
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter an 8-bit binary number in the format xxxxxxxx: ");
-            decimal binary = decimal.Parse(Console.ReadLine());
+            Console.Write("Enter a binary number: ");
+            Int128 binary = Int128.Parse(Console.ReadLine());
 
-            int toDecimal = 0;
-            for (int i = 0; i < 8; i++)
+            Int128 toDecimal = 0;
+            int power = 0;
+
+            do
             {
-                toDecimal += (int)((double)binary % 10 * Math.Pow(2, i));
+                toDecimal += binary % 10 * (int)Math.Pow(2, power);
                 binary /= 10;
-
-                if (binary == 1)
-                {
-                    break;
-                }
-            }
+                power++;
+            } while (binary >= 1);
 
             Console.WriteLine("To decimal: {0}", toDecimal);
         }
