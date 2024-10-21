@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. DecimalToHexadecimal", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. HexadecimalToDecimal", "Chapter 6\15. HexadecimalToDecimal\15. HexadecimalToDecimal.csproj", "{4D26AE63-A167-4F27-9671-9D38EC7523CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Random1ToN", "Chapter 6\16. Random1ToN\16. Random1ToN.csproj", "{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +461,10 @@ Global
 		{4D26AE63-A167-4F27-9671-9D38EC7523CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D26AE63-A167-4F27-9671-9D38EC7523CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D26AE63-A167-4F27-9671-9D38EC7523CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -537,6 +543,7 @@ Global
 		{CA8DD256-387C-403B-AA28-4F305EF53424} = {9619355E-3F8F-479A-B5AC-07FBFEC67E97}
 		{8F4A4C23-C7D3-4046-A649-2E17381B0764} = {9619355E-3F8F-479A-B5AC-07FBFEC67E97}
 		{4D26AE63-A167-4F27-9671-9D38EC7523CC} = {9619355E-3F8F-479A-B5AC-07FBFEC67E97}
+		{4DC88B80-D92C-4772-B8C4-8E6B8A1801DB} = {9619355E-3F8F-479A-B5AC-07FBFEC67E97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A02B64A-EB33-4BDF-8203-FED1865F08F8}
