@@ -4,21 +4,26 @@
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[2];
-            numbers[0] = 1;
 
             Console.Write("Enter a number > 1: ");
             int number = int.Parse(Console.ReadLine());
 
-            // for (int i = 2; i <= 2; i++)
-            // {
-                numbers.Append(2);
-                // Console.WriteLine(numbers[i]);
-            // }
+            int[] numbers = new int[number];
 
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 1; i <= number; i++)
             {
-                Console.WriteLine(numbers[i]);
+                numbers[i - 1] = i;
+            }
+
+            Random rnd = new();
+            int random = int.MinValue;
+            var numbersList = numbers.ToList();
+
+            for (int i = 0; i < number; i++)
+            {
+                random = rnd.Next(numbersList.Count);
+                Console.Write("{0} ", numbersList[random]);
+                numbersList.Remove(numbersList[random]);
             }
         }
     }
