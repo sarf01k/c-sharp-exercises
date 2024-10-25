@@ -4,10 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number: ");
+            Console.Write("Enter a number: ");
             byte n = byte.Parse(Console.ReadLine());
 
             byte[,] matrix = new byte[n, n];
+
+            FillMatrix(matrix, n);
+            PrintMatrix(matrix, n);
         }
 
         private static void FillMatrix(byte[,] matrix, byte n)
@@ -17,10 +20,11 @@
             byte positionX = 0;
 
             byte direction = 0;
-            byte stepCount = 3;
+            byte stepCount = 1;
             byte stepPosition = 0;
+            byte stepChange = 0;
 
-            for (byte i = 1; i <= n; i++)
+            for (byte i = 1; i <= n * n; i++)
             {
                 matrix[positionY, positionX] = i;
 
@@ -31,6 +35,12 @@
                 else
                 {
                     stepPosition = 1;
+                    if (stepChange == 1)
+                    {
+                        stepCount++;
+                    }
+                    stepChange = (byte)((stepChange + 1) % 3);
+                    direction = (byte)((direction + 1) % 1);
                 }
 
                 switch (direction)
