@@ -175,6 +175,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. EqualArrays", "Chapter 7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Lexicography", "Chapter 7\3. Lexicography\3. Lexicography.csproj", "{137B7437-3401-4188-ACC7-7D8218F4DA74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. ConsecutiveEqual", "Chapter 7\4. ConsecutiveEqual\4. ConsecutiveEqual.csproj", "{E6D20D80-3610-4D40-90E4-5254087607AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. ConsecutiveIncreasing", "Chapter 7\5. ConsecutiveIncreasing\5. ConsecutiveIncreasing.csproj", "{CB404570-2F73-498E-A056-F1C901E96B31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -497,6 +501,14 @@ Global
 		{137B7437-3401-4188-ACC7-7D8218F4DA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{137B7437-3401-4188-ACC7-7D8218F4DA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{137B7437-3401-4188-ACC7-7D8218F4DA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D20D80-3610-4D40-90E4-5254087607AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D20D80-3610-4D40-90E4-5254087607AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D20D80-3610-4D40-90E4-5254087607AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D20D80-3610-4D40-90E4-5254087607AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB404570-2F73-498E-A056-F1C901E96B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB404570-2F73-498E-A056-F1C901E96B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB404570-2F73-498E-A056-F1C901E96B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB404570-2F73-498E-A056-F1C901E96B31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -581,6 +593,8 @@ Global
 		{2ED87C17-1CB0-49F4-A40A-C67508529D7E} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{C41A3BAF-7B59-4560-90F0-E1725B7D42DD} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{137B7437-3401-4188-ACC7-7D8218F4DA74} = {C2DC2612-A944-496E-A760-372376DE3B83}
+		{E6D20D80-3610-4D40-90E4-5254087607AA} = {C2DC2612-A944-496E-A760-372376DE3B83}
+		{CB404570-2F73-498E-A056-F1C901E96B31} = {C2DC2612-A944-496E-A760-372376DE3B83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A02B64A-EB33-4BDF-8203-FED1865F08F8}

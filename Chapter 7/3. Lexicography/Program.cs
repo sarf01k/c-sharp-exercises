@@ -4,26 +4,47 @@
     {
         static void Main(string[] args)
         {
-            char[] chars1 = { 'a', 'b',};
-            char[] chars2 = { 'a', 'b',};
-            
-            const byte a = (byte)'a';
-            byte b = (byte)'b';
+            char[] chars1 = { 'a', 'b', 'd', 'e'};
+            char[] chars2 = { 'a', 'b', 'c', 'f'};
 
-            Console.WriteLine("{0} {1}", a, b);
+            byte a;
+            byte b;
 
-            switch (a)
+            for (int i = 0, j = 0; i < chars1.Length && j < chars2.Length; i++, j++)
             {
-                case > b:
-                    Console.WriteLine("More");
-                    break;
-                case < b:
-                    Console.WriteLine("Less");
-                    break;
-                default:
-                    Console.WriteLine("Equal");
-                    break;
+                a = (byte)chars1[i];
+                b = (byte)chars2[i];
+
+                if (chars1.Length > chars2.Length)
+                {
+                    Console.WriteLine("The second array comes first.");
+                    return;
+                }
+                else if (chars1.Length < chars2.Length)
+                {
+                    Console.WriteLine("The first array comes first.");
+                    return;
+                }
+                else
+                {
+                    if (a < b || a == 0)
+                    {
+                        Console.WriteLine("The first array comes first.");
+                        return;
+                    }
+                    else if (a > b)
+                    {
+                        Console.WriteLine("The second array comes first.");
+                        return;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
             }
+
+            Console.WriteLine("The arrays are equal.");
         }
     }
 }
