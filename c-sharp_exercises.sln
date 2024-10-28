@@ -179,6 +179,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. ConsecutiveEqual", "Chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. ConsecutiveIncreasing", "Chapter 7\5. ConsecutiveIncreasing\5. ConsecutiveIncreasing.csproj", "{CB404570-2F73-498E-A056-F1C901E96B31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. IncreasingSequence", "Chapter 7\6. IncreasingSequence\6. IncreasingSequence.csproj", "{3ABBA123-B716-4D64-8DAF-D396FFF5FB91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -509,6 +511,10 @@ Global
 		{CB404570-2F73-498E-A056-F1C901E96B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB404570-2F73-498E-A056-F1C901E96B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB404570-2F73-498E-A056-F1C901E96B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ABBA123-B716-4D64-8DAF-D396FFF5FB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ABBA123-B716-4D64-8DAF-D396FFF5FB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ABBA123-B716-4D64-8DAF-D396FFF5FB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ABBA123-B716-4D64-8DAF-D396FFF5FB91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -595,6 +601,7 @@ Global
 		{137B7437-3401-4188-ACC7-7D8218F4DA74} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{E6D20D80-3610-4D40-90E4-5254087607AA} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{CB404570-2F73-498E-A056-F1C901E96B31} = {C2DC2612-A944-496E-A760-372376DE3B83}
+		{3ABBA123-B716-4D64-8DAF-D396FFF5FB91} = {C2DC2612-A944-496E-A760-372376DE3B83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A02B64A-EB33-4BDF-8203-FED1865F08F8}
