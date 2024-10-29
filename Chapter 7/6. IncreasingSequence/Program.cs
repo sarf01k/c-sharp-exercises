@@ -16,26 +16,47 @@
             for (int i = 0; i < elements.Length; i++)
             {
                 start = elements[i];
+                maxSequenceList = [ start ];
                 if (i != elements.Length - 1)
                 {
                     for (int j = i + 1; j < elements.Length; j++)
                     {
                         if (elements[j] > start)
-                        {
-                            maxSequenceList.Append(elements[j]);
-                            if (maxSequenceList.Count > 0)
-                                Console.Write(maxSequenceList[j-1]);
-                        }
-                    }
+                            maxSequenceList.Add(elements[j]);
+                    }                                                            
                     len = (byte)maxSequenceList.Count;
                 }
-
-                for (int k = 0; k < maxSequenceList.Count; k++)
+                
+                if (len > bestLen)
                 {
-                    Console.Write(maxSequenceList[i]);
+                    bestLen = len;
+                    maxSequence = maxSequenceList.Distinct().ToArray();
                 }
+            }
 
-                // if (len > bestLen)
+            byte biggest = maxSequence.Max();
+            Array.Resize(ref maxSequence, Array.IndexOf(maxSequence, biggest) + 1);
+
+            //
+            for (int k = 0; k < maxSequence.Length; k++)
+            {
+                Console.Write(maxSequence[k]);
+            }
+            Console.WriteLine();
+            //
+
+            maxSequenceList = maxSequence.ToList();
+            for (int i = 1; i < maxSequenceList.Count - 1; i++)
+            {
+                if (maxSequenceList[i] > maxSequenceList[i+1] && maxSequenceList[i] > maxSequenceList[i-1] || maxSequenceList[i] < maxSequenceList[i+1] && maxSequenceList[i] < maxSequenceList[i-1])
+                {
+                    maxSequenceList.Remove(maxSequenceList[i]);
+                }
+            }
+
+            for (int k = 0; k < maxSequenceList.Count; k++)
+            {
+                Console.Write(maxSequenceList[k]);
             }
         }
     }
