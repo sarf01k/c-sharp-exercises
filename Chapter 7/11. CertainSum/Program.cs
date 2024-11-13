@@ -2,9 +2,9 @@
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            byte[] numbers = { 4, 3, 1, 4, 2, 5, 8 };
+            int[] numbers = { 4, 3, 1, 4, 2, 5, 8 };
 
             Console.Write("Numbers: ");
             for (int i = 0; i < numbers.Length; i++)
@@ -13,38 +13,40 @@
             }
 
             Console.Write("\n\nEnter a number: ");
-            byte target;
-            byte.TryParse(Console.ReadLine(), out target);
+            int target;
+            int.TryParse(Console.ReadLine(), out target);
 
-            byte sum;
-            byte len = 1;
-            byte startIndx;
+            int sum = 0;
+            int startIndx = int.MinValue;
+            int count = int.MinValue;
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                sum = numbers[i];
-                startIndx = (byte)i;
+                startIndx = i;
+                sum = numbers[startIndx];
+                count = startIndx + 1;
 
-                for (int j = i + 1; j < numbers.Length; j++)
+                while (sum < target && count < numbers.Length)
                 {
+                    sum += numbers[count];
+                    count++;
+
                     if (sum == target)
                     {
-                        Console.Write("{0} -> ", target);
-                        for (int k = startIndx; k < startIndx + len; k++)
+                        Console.Write($"{target} -> ( ");
+                        for (int j = startIndx; j < count; j++)
                         {
-                            Console.Write("{0}", numbers[k]);
-                            break;
+                            if (j == count - 1)
+                                Console.Write($"{numbers[j]}");
+                            else
+                                Console.Write($"{numbers[j]}, ");
                         }
-                    }
-                    else if (sum > target)
-                    {
-                        Console.WriteLine("\nNo sequence.");
-                        break;
+                        Console.Write(" )");
+                        return;
                     }
                     else
                     {
-                        sum += numbers[j];
-                        len++;
+                        continue;
                     }
                 }
             }
