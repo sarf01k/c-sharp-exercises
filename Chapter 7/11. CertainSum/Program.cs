@@ -44,12 +44,10 @@
                         Console.Write(" )");
                         return;
                     }
-                    else
-                    {
-                        continue;
-                    }
                 }
             }
+
+            Console.WriteLine($"No numbers add up to {target}");
         }
     }
 }

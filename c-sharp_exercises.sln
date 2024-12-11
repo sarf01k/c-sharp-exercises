@@ -187,6 +187,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. MostFrequent", "Chapter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. CertainSum", "Chapter 7\11. CertainSum\11. CertainSum.csproj", "{E9DB5D6B-105F-410C-B7F6-546AA1744D26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. SquareMatrices", "Chapter 7\12. SquareMatrices\12. SquareMatrices.csproj", "{2631B587-BC48-4420-AF07-B0BC2EF0241F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -533,6 +535,10 @@ Global
 		{E9DB5D6B-105F-410C-B7F6-546AA1744D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9DB5D6B-105F-410C-B7F6-546AA1744D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9DB5D6B-105F-410C-B7F6-546AA1744D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2631B587-BC48-4420-AF07-B0BC2EF0241F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2631B587-BC48-4420-AF07-B0BC2EF0241F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2631B587-BC48-4420-AF07-B0BC2EF0241F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2631B587-BC48-4420-AF07-B0BC2EF0241F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -623,6 +629,7 @@ Global
 		{00E88E83-3DBF-4208-8E87-51EE8BBBD2C8} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{A6E2AA08-7A22-4D15-B902-BB06D740B3F4} = {C2DC2612-A944-496E-A760-372376DE3B83}
 		{E9DB5D6B-105F-410C-B7F6-546AA1744D26} = {C2DC2612-A944-496E-A760-372376DE3B83}
+		{2631B587-BC48-4420-AF07-B0BC2EF0241F} = {C2DC2612-A944-496E-A760-372376DE3B83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A02B64A-EB33-4BDF-8203-FED1865F08F8}
