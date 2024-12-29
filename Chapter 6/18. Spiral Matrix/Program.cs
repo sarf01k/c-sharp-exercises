@@ -5,42 +5,42 @@
         static void Main(string[] args)
         {
             Console.Write("Enter a number: ");
-            byte n = byte.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
 
-            byte[,] matrix = new byte[n, n];
+            int[,] matrix = new int[n, n];
 
             FillMatrix(matrix, n);
             PrintMatrix(matrix, n);
         }
 
-        private static void FillMatrix(byte[,] matrix, byte n)
+        private static void FillMatrix(int[,] matrix, int n)
         {
             // starting position
-            byte positionY = 0;
-            byte positionX = 0;
+            int positionY = 0;
+            int positionX = 0;
 
-            byte direction = 0;
-            byte stepCount = 1;
-            byte stepPosition = 0;
-            byte stepChange = 0;
+            int direction = 0;
+            int stepCount = 3 ;
+            int performedSteps = 0;
+            int stepChange = 0;
 
-            for (byte i = 1; i <= n * n; i++)
+            for (int i = 1; i <= n * n; i++)
             {
                 matrix[positionY, positionX] = i;
 
-                if (stepPosition < stepCount)
+                if (performedSteps < stepCount)
                 {
-                    stepPosition++;
+                    performedSteps++;
                 }
                 else
                 {
-                    stepPosition = 1;
+                    performedSteps = 1;
                     if (stepChange == 1)
                     {
-                        stepCount++;
+                        stepCount--;
                     }
-                    stepChange = (byte)((stepChange + 1) % 3);
-                    direction = (byte)((direction + 1) % 1);
+                    stepChange = (stepChange + 1) % 2;
+                    direction = (direction + 1) % 4;
                 }
 
                 switch (direction)
@@ -61,7 +61,7 @@
             }
         }
 
-        private static void PrintMatrix(byte[,] matrix, byte n)
+        private static void PrintMatrix(int[,] matrix, int n)
         {
             for (int i = 0; i < n; i++)
             {
